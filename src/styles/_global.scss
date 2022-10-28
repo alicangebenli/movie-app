@@ -1,0 +1,17 @@
+@import "mixins";
+.card-list {
+  display: flex;
+  column-gap: 12px;
+  flex-wrap: wrap;
+
+  @include respond-to(large-mobile){
+    justify-content: center;
+  }
+  & .movie-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+}

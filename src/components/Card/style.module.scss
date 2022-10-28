@@ -1,0 +1,33 @@
+.card {
+  width: 170px;
+  height: 253px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    opacity: 80%;
+  }
+  & .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 40%;
+    width: 100%;
+    padding-bottom: 10px;
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #0F1E29 100%);
+    border-radius: 12px;
+  }
+  & .image {
+    height: 204px;
+    width: 170px;
+    border-radius: 12px;
+  }
+}

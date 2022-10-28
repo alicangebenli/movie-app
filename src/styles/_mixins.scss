@@ -1,0 +1,36 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small-mobile {
+    @media only screen and (max-width: 380px) {
+      @content;
+    }
+  } @else if $breakpoint == medium-mobile {
+    @media only screen and (max-width: 375px) {
+      @content;
+    }
+  } @else if $breakpoint == large-mobile {
+    @media only screen and (max-width: 425px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == laptop {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $breakpoint == large-laptop {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+  } @else {
+    @media only screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+@include respond-to(tablet-landscape) {
+  border: 0;
+  margin: 0 24px;
+}
