@@ -5,7 +5,9 @@ import Link from "../../components/Link";
 import {useAppDispatch, useAppSelector} from "../../state/store";
 import {getMoviesAsync} from "../../features/movieSlice";
 
-export const HomePage: React.FC = () => {
+interface Props {}
+
+export const HomePage: React.FC<Props> = () => {
     const dispatch = useAppDispatch();
     const movies = useAppSelector((state) => state.movie.Movies);
 

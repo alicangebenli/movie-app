@@ -49,7 +49,7 @@
     "build_dev": "webpack --config webpack.config.js --mode development --env=development",
     "build": "webpack --config webpack.config.js --mode production --env=production",
     "start_dev": "npm run build_dev && node server/server.js",
-    "start": "npm run build && node server/server.js"
+    "start": "node server/server.js"
   },
   "eslintConfig": {
     "extends": [

@@ -1,4 +1,5 @@
 import React from "react";
+import style from './style.module.scss';
 
 interface Props {
     id: number,
@@ -6,8 +7,6 @@ interface Props {
     image: string,
     description: string
 }
-
-import style from './style.module.scss';
 
 const Card: React.FC<Props> = ({id, title, image, description}) => {
     return (

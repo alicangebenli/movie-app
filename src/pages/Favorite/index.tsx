@@ -4,8 +4,7 @@ import MovieModel from "../../models/Movie";
 import {getFavoriteAsync} from "../../features/movieSlice";
 import {useAppDispatch, useAppSelector} from "../../state/store";
 
-interface Props {
-}
+interface Props {}
 
 export const FavoritePage: React.FC<Props> = () => {
     const dispatch = useAppDispatch();

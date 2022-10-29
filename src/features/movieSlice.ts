@@ -59,9 +59,8 @@ export const getMovieImageListByIdAsync = createAsyncThunk(
 
 export const getFavoriteAsync = createAsyncThunk(
     'movie/getFavoriteAsync',
-    async (arg, {dispatch}) => {
-        const favorites = await localforage.getItem('favorites');
-        return favorites;
+    async () => {
+        return await localforage.getItem('favorites');
     }
 )
 

@@ -1,4 +1,3 @@
-// @ts-ignore
 import axios from "axios";
 import MovieModel from "../models/Movie";
 
